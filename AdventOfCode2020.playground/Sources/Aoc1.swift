@@ -7,21 +7,31 @@ public class Aoc1 {
         self.arrayOfNumbers = arrayOfNumbers
     }
     
-    private func foundNumbersWhichSumTo2020() -> (firstNumber: Int, secondNumber: Int)?  {
+    public func findTwoNumbersWhichSumTo2020AndMultiplyThem() -> Int?  {
         for firstNumber in arrayOfNumbers {
             if let indexOfSecondNumber = arrayOfNumbers.firstIndex(of: 2020 - firstNumber) {
-                return (firstNumber, arrayOfNumbers[indexOfSecondNumber])
+                return firstNumber * arrayOfNumbers[indexOfSecondNumber]
             }
         }
         
         return nil
     }
-    
-    public func multiplyNumberIfExist() -> Int? {
-        guard let tupleOfCorrectNumbers = foundNumbersWhichSumTo2020() else {
-            return nil
+
+    public func findThreeNumbersWhichSumTo2020AndMultiplyThem() -> Int? {
+        for firstNumber in arrayOfNumbers {
+            let resultAfterSubtractingFirstNumber = 2020 - firstNumber
+                
+            guard resultAfterSubtractingFirstNumber > 0 else {
+                return nil
+            }
+            
+            for secondNumber in arrayOfNumbers.filter({ $0 < firstNumber }) {
+                if let indexOfThirdNumber = arrayOfNumbers.firstIndex(of: resultAfterSubtractingFirstNumber - secondNumber) {
+                    return firstNumber * secondNumber * arrayOfNumbers[indexOfThirdNumber]
+                }
+            }
         }
         
-        return tupleOfCorrectNumbers.firstNumber * tupleOfCorrectNumbers.secondNumber
+        return nil
     }
 }
