@@ -12,3 +12,7 @@ print("Advent of code day 1 part 1 solution: \(aoc1.findThreeNumbersWhichSumTo20
 let aoc2 = Aoc2(arrayOfValues: Aoc2Helper.readFile("/Users/jrutkowski/Documents/Projects/AoC2020/AdventOfCode2020.playground/Resources/aoc2Input"))
 print("Advent of code day 2 part 1 solution: \(aoc2.checkAmountOfProperPasswords())")
 print("Advent of code day 2 part 2 solution: \(aoc2.checkAmountOfPropeperPasswordWithSecondPolicy())")
+
+let aoc3 = Aoc3(arrayOfValues: Aoc3Helper.readFile("/Users/jrutkowski/Documents/Projects/AoC2020/AdventOfCode2020.playground/Resources/aoc3Input"))
+print("Advent of code day 3 part 1 solution: \(aoc3.checkHowManyTreesWillHitUs())")
+print("Advent of code day 3 part 2 solution: \(aoc3.checkHowManyTreesWillHitUsInFewVariants())")

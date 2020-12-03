@@ -25,9 +25,3 @@ public class Aoc2Helper {
         return inputArray
     }
 }
-
-public extension StringProtocol {
-    subscript(offset: Int) -> Character {
-        self[index(startIndex, offsetBy: offset)]
-    }
-}
