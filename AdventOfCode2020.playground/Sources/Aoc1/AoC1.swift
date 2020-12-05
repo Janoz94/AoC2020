@@ -21,13 +21,11 @@ public class Aoc1 {
         for firstNumber in arrayOfNumbers {
             let resultAfterSubtractingFirstNumber = 2020 - firstNumber
                 
-            guard resultAfterSubtractingFirstNumber > 0 else {
-                return nil
-            }
-            
-            for secondNumber in arrayOfNumbers.filter({ $0 < firstNumber }) {
-                if let indexOfThirdNumber = arrayOfNumbers.firstIndex(of: resultAfterSubtractingFirstNumber - secondNumber) {
-                    return firstNumber * secondNumber * arrayOfNumbers[indexOfThirdNumber]
+            if resultAfterSubtractingFirstNumber > 0 {
+                for secondNumber in arrayOfNumbers.filter({ $0 < firstNumber }) {
+                    if let indexOfThirdNumber = arrayOfNumbers.firstIndex(of: resultAfterSubtractingFirstNumber - secondNumber) {
+                        return firstNumber * secondNumber * arrayOfNumbers[indexOfThirdNumber]
+                    }
                 }
             }
         }
