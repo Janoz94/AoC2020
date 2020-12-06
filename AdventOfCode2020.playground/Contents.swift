@@ -14,7 +14,11 @@ let arrayOfNumbers = [1721, 979, 366, 299, 675, 1456]
 //let aoc3 = Aoc3(arrayOfValues: Aoc3Helper.readFile("/Users/jrutkowski/Documents/Projects/AoC2020/AdventOfCode2020.playground/Resources/aoc3Input"))
 //print("Advent of code day 3 part 1 solution: \(aoc3.checkHowManyTreesWillHitUs())")
 //print("Advent of code day 3 part 2 solution: \(aoc3.checkHowManyTreesWillHitUsInFewVariants())")
+//
+//let aoc4 = Aoc4(arrayOfValues: Aoc4Helper.readFile("/Users/jrutkowski/Documents/Projects/AoC2020/AdventOfCode2020.playground/Resources/aoc4Input"))
+//print("Advent of code day 4 part 1 solution: \(aoc4.countAmountOfValidPassword())")
+//print("Advent of code day 4 part 2 solution: \(aoc4.countAmountOfDoublyValidPasswords())")
 
-let aoc4 = Aoc4(arrayOfValues: Aoc4Helper.readFile("/Users/jrutkowski/Documents/Projects/AoC2020/AdventOfCode2020.playground/Resources/aoc4Input"))
-print("Advent of code day 4 part 1 solution: \(aoc4.countAmountOfValidPassword())")
-print("Advent of code day 4 part 2 solution: \(aoc4.countAmountOfDoublyValidPasswords())")
+let aoc5 = Aoc5(arrayOfValues: Aoc5Helper.readFile("/Users/jrutkowski/Documents/Projects/AoC2020/AdventOfCode2020.playground/Resources/aoc5Input"))
+print("Advent of code day 5 part 1 solution: \(aoc5.findBiggestSeatId())")
+print("Advent of code day 5 part 2 solution: \(aoc5.findOurSeatId())")
