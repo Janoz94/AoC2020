@@ -23,6 +23,10 @@ let arrayOfNumbers = [1721, 979, 366, 299, 675, 1456]
 //print("Advent of code day 5 part 1 solution: \(aoc5.findBiggestSeatId())")
 //print("Advent of code day 5 part 2 solution: \(aoc5.findOurSeatId())")
 
-let aoc6 = Aoc6(arrayOfValues: Aoc6Helper.readFile("/Users/jrutkowski/Documents/Projects/AoC2020/AdventOfCode2020.playground/Resources/aoc6Input"))
-print("Advent of code day 6 part 1 solution: \(aoc6.checkHowManyQuestionsAllGroupsAnswered())")
-print("Advent of code day 6 part 2 solution: \(aoc6.checkHowManyComonAnswersAllGroupsAnswered())")
+//let aoc6 = Aoc6(arrayOfValues: Aoc6Helper.readFile("/Users/jrutkowski/Documents/Projects/AoC2020/AdventOfCode2020.playground/Resources/aoc6Input"))
+//print("Advent of code day 6 part 1 solution: \(aoc6.checkHowManyQuestionsAllGroupsAnswered())")
+//print("Advent of code day 6 part 2 solution: \(aoc6.checkHowManyComonAnswersAllGroupsAnswered())")
+
+let aoc7 = Aoc7(arrayOfValues: Aoc7Helper.readFile("/Users/jrutkowski/Documents/Projects/AoC2020/AdventOfCode2020.playground/Resources/aoc7Input"))
+print("Advent of code day 7 part 1 solution: \(aoc7.findAmountOfBagsWhichContainShinyGoldOne())")
+//print("Advent of code day 7 part 2 solution: \(aoc7.checkHowManyComonAnswersAllGroupsAnswered())")
